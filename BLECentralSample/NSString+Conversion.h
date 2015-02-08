@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString_Conversion : NSString
+@interface NSString (NSString_Conversion)
+
+#pragma mark - Data Conversion
+- (NSData *)dataFromHexString;
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E76AE141A87C6C300B19A08 /* NSData+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E76AE131A87C6C300B19A08 /* NSData+Conversion.m */; };
+		6E76AE171A87C77100B19A08 /* NSString+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E76AE161A87C77100B19A08 /* NSString+Conversion.m */; };
 		6E96076B1A06634000726EB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E96076A1A06634000726EB8 /* main.m */; };
 		6E96076E1A06634000726EB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E96076D1A06634000726EB8 /* AppDelegate.m */; };
 		6E9607711A06634000726EB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9607701A06634000726EB8 /* ViewController.m */; };
@@ -14,6 +16,7 @@
 		6E9607761A06634100726EB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9607751A06634100726EB8 /* Images.xcassets */; };
 		6E9607791A06634100726EB8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E9607771A06634100726EB8 /* LaunchScreen.xib */; };
 		6E9607851A06634100726EB8 /* BLECentralSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9607841A06634100726EB8 /* BLECentralSampleTests.m */; };
+		6E9607C31A06685C00726EB8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9607C21A06685C00726EB8 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E76AE121A87C6C300B19A08 /* NSData+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Conversion.h"; sourceTree = "<group>"; };
+		6E76AE131A87C6C300B19A08 /* NSData+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Conversion.m"; sourceTree = "<group>"; };
+		6E76AE151A87C77100B19A08 /* NSString+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Conversion.h"; sourceTree = "<group>"; };
+		6E76AE161A87C77100B19A08 /* NSString+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Conversion.m"; sourceTree = "<group>"; };
 		6E9607651A06634000726EB8 /* BLECentralSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLECentralSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9607691A06634000726EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E96076A1A06634000726EB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 		6E96077E1A06634100726EB8 /* BLECentralSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLECentralSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9607831A06634100726EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E9607841A06634100726EB8 /* BLECentralSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLECentralSampleTests.m; sourceTree = "<group>"; };
+		6E9607C21A06685C00726EB8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E9607C31A06685C00726EB8 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		6E96075C1A06634000726EB8 = {
 			isa = PBXGroup;
 			children = (
+				6E9607C21A06685C00726EB8 /* CoreBluetooth.framework */,
 				6E9607671A06634000726EB8 /* BLECentralSample */,
 				6E9607811A06634100726EB8 /* BLECentralSampleTests */,
 				6E9607661A06634000726EB8 /* Products */,
@@ -89,6 +99,10 @@
 				6E9607751A06634100726EB8 /* Images.xcassets */,
 				6E9607771A06634100726EB8 /* LaunchScreen.xib */,
 				6E9607681A06634000726EB8 /* Supporting Files */,
+				6E76AE121A87C6C300B19A08 /* NSData+Conversion.h */,
+				6E76AE131A87C6C300B19A08 /* NSData+Conversion.m */,
+				6E76AE151A87C77100B19A08 /* NSString+Conversion.h */,
+				6E76AE161A87C77100B19A08 /* NSString+Conversion.m */,
 			);
 			path = BLECentralSample;
 			sourceTree = "<group>";
@@ -168,6 +182,11 @@
 				TargetAttributes = {
 					6E9607641A06634000726EB8 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					6E96077D1A06634100726EB8 = {
 						CreatedOnToolsVersion = 6.1;
@@ -221,6 +240,8 @@
 			files = (
 				6E9607711A06634000726EB8 /* ViewController.m in Sources */,
 				6E96076E1A06634000726EB8 /* AppDelegate.m in Sources */,
+				6E76AE141A87C6C300B19A08 /* NSData+Conversion.m in Sources */,
+				6E76AE171A87C77100B19A08 /* NSString+Conversion.m in Sources */,
 				6E96076B1A06634000726EB8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +364,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = BLECentralSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -353,7 +376,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = BLECentralSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +437,7 @@
 				6E96078A1A06634100726EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E96078B1A06634100726EB8 /* Build configuration list for PBXNativeTarget "BLECentralSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +446,7 @@
 				6E96078D1A06634100726EB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
