@@ -158,7 +158,7 @@
     NSLog(@"value: %@", characteristic.value);
     NSUInteger index;
     [characteristic.value getBytes:&index length:sizeof(index)];
-    NSLog(@"%d", index);
+    NSLog(@"%ld", (long)index);
     
     
     NSString *value = [[NSString alloc] initWithData:characteristic.value encoding:NSUTF8StringEncoding];
@@ -215,20 +215,11 @@
 
 // 書き込みテスト用のメソッド
 - (IBAction)writeDataTestMethod:(id)sender {
+    NSInteger writeInt = 4661;
+    NSString *witeString = [NSString stringWithFormat:@"%lX",(long)writeInt];
+    NSData *writeData = [witeString dataFromHexString];
+    NSLog(@"writeData: %@", writeData);
     
-    NSUInteger index = 963720210;//1234: 963720210, 5678: 963737686
-    NSData *payload = [NSData dataWithBytes:&index length:(sizeof(index)/2)];
-    NSLog(@"data: %@", payload);
-    NSString *someDataHexadecimalString = [payload hexadecimalString];
-    NSLog(@"someDataHexadecimalString: %@", someDataHexadecimalString);
-    
-    NSData *someStringHexadecimalData = [someDataHexadecimalString dataFromHexString];
-    NSLog(@"someStringHexadecimalData: %@", someStringHexadecimalData);
-    
-    NSString *testString = @"1221";
-    NSData *testData = [testString dataFromHexString];
-    NSLog(@"testData: %@", testData);
-    
-    //[self.connectedPeripheral writeValue:nil forCharacteristic:self.majorChar type::CBCharacteristicWriteWithResponse];
+    [self.connectedPeripheral writeValue:writeData forCharacteristic:self.majorChar type:CBCharacteristicWriteWithResponse];
 }
 @end

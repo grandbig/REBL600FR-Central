@@ -13,7 +13,7 @@
 #pragma mark - Data Conversion
 - (NSData *)dataFromHexString {
     const char *chars = [self UTF8String];
-    int i = 0, len = self.length;
+    NSUInteger i = 0, len = self.length;
     
     NSMutableData *data = [NSMutableData dataWithCapacity:len / 2];
     char byteChars[3] = {'\0','\0','\0'};
